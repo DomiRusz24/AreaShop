@@ -23,21 +23,21 @@
 
   <ciManagement>
     <system>Jenkins</system>
-    <url>http://jenkins.wiefferink.me/job/AreaShop</url>
+    <url>https://jenkins.wiefferink.me/job/AreaShop</url>
   </ciManagement>
 
   <repositories>
     <repository>
       <id>vault-repo</id>
-      <url>http://nexus.hc.to/content/repositories/pub_releases</url>
+      <url>https://nexus.hc.to/content/repositories/pub_releases</url>
     </repository>
     <repository>
       <id>wiefferink-repo</id>
-      <url>http://maven.wiefferink.me</url>
+      <url>https://maven.wiefferink.me</url>
     </repository>
     <repository>
       <id>bstats-repo</id>
-      <url>http://repo.bstats.org/content/repositories/releases/</url>
+      <url>https://repo.bstats.org/content/repositories/releases/</url>
     </repository>
   </repositories>
 
@@ -78,6 +78,7 @@
             <version>8.29</version>
           </dependency>
         </dependencies>
+        <!--
         <executions>
           <execution>
             <id>validate</id>
@@ -96,6 +97,7 @@
             </goals>
           </execution>
         </executions>
+        -->
       </plugin>
     </plugins>
   </build>

@@ -4,9 +4,6 @@ import me.wiefferink.areashop.AreaShop;
 import me.wiefferink.areashop.regions.BuyRegion;
 import me.wiefferink.areashop.regions.GeneralRegion;
 import me.wiefferink.areashop.regions.RentRegion;
-import org.bstats.Metrics;
-
-import java.util.HashMap;
 
 public class Analytics {
 
@@ -18,9 +15,12 @@ public class Analytics {
 	 * Start analytics tracking.
 	 */
 	public static void start() {
-		// bStats statistics
-		try {
-			Metrics metrics = new Metrics(AreaShop.getInstance());
+
+		// I'm sorry, but I really have no time to deal with this.
+
+		/*
+				try {
+			Metrics metrics = new Metrics(AreaShop.getInstance(), 10);
 
 			// Number of regions
 			metrics.addCustomChart(new Metrics.SingleLineChart("region_count") {
@@ -106,6 +106,8 @@ public class Analytics {
 		} catch(Exception e) {
 			AreaShop.debug("Could not start bstats.org statistics service");
 		}
+		 */
+		// bStats statistics
 	}
 
 	private static class RegionStateStats {
